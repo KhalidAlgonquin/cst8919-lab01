@@ -15,7 +15,7 @@ The goal of this lab is to understand how Single Sign-On authentication works in
 
 ## Demo Video
 
-[`Watch demo video`](https://https://youtu.be/dx8JuQzOHyw) 
+[`Watch demo video`](https://youtu.be/dx8JuQzOHyw) 
 
 ## Project Structure
 
