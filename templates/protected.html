@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Protected Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <main class="container">
+        <h1>Protected Page</h1>
+
+        <p>You are authenticated and can access this protected content.</p>
+
+        <p>This page is only available to logged-in users.</p>
+
+        <a href="/" class="button">Home</a>
+        <a href="/profile" class="button">Profile</a>
+        <a href="/logout" class="button">Log Out</a>
+    </main>
+</body>
+
+</html>

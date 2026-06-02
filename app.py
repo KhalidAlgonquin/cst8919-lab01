@@ -59,5 +59,17 @@ async def logout():
     logout_url = await auth0.logout(options, g.store_options)
     return redirect(logout_url)
 
+
+"""Protected route required in Lab 01"""
+@app.route('/protected')
+async def protected():
+    
+    user = await auth0.get_user(g.store_options)
+
+    if not user:
+        return redirect(url_for('login'))
+
+    return render_template('protected.html', user=user)
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
